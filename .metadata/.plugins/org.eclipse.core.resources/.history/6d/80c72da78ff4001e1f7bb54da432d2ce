@@ -1,0 +1,17 @@
+package Collection_12;
+
+import java.util.ArrayList;
+
+public class ArrayList_1 {
+
+	public static void main(String[] args) {
+ArrayList b1=new ArrayList();
+b1.add(12, 10);
+b1.add("Roohi");
+b1.add(145565);
+b1.add(null);
+
+System.out.println(b1);
+	}
+
+}

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="SMoke Suite">
+  <test thread-count="5" name="SMoke Test case">
+    <classes>
+      <class name="test_ng.Testcase1"/>
+      <class name="test_ng.TestCase5"/>
+      <class name="test_ng.TestCase4"/>
+      <class name="test_ng.TestCase3"/>
+      <class name="test_ng.TestCase2"/>
+    </classes>
+  </test> <!-- SMoke Test case -->
+</suite> <!-- SMoke Suite -->

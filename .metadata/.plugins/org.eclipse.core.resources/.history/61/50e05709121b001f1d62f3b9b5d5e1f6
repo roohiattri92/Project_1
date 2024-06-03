@@ -1,0 +1,19 @@
+package java_program;
+
+public class Reverse_Program {
+
+	public static void main(String[] args) 
+	{
+		String name="Ramanpreet kaur";
+		
+		int f=name.length();
+		System.out.println(f);
+		
+		for(int i=name.length()-1;i>=0;i--)
+		{
+			System.out.println(name.charAt(i));
+		}
+
+	}
+
+}

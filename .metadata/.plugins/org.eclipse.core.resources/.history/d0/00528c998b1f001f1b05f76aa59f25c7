@@ -1,0 +1,41 @@
+package Source;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+
+public class Registeration_page 
+{
+	@FindBy(xpath="(//div[@class='abc-ripple-wrapper'])[2]")
+	WebElement Click_Signin;
+	
+	@FindBy(xpath="(//div[@class='abc-ripple-wrapper'])[18]")
+	WebElement Signin_button;
+	
+	@FindBy(xpath="//a[.='Create an account']")
+	WebElement Create_an_account;
+	
+	public void Click_Signin()
+	{
+		Click_Signin.click();
+	}
+	public void Signin_button()
+	{
+		Signin_button.click();
+	}
+	public void Create_an_account()
+	{
+		Create_an_account.click();
+	}
+	
+	
+	
+	public Registeration_page(WebDriver driver)
+	{
+		PageFactory.initElements(driver, this);
+	}
+	
+	
+
+}

@@ -1,0 +1,39 @@
+package selenium_program;
+
+import java.time.Duration;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.interactions.Actions;
+
+public class Hoverover_amazon1 {
+
+	public static void main(String[] args) {
+		WebDriver god=new ChromeDriver();
+		god.navigate().to("https://www.amazon.in/");
+		god.manage().window().maximize();
+		god.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+	WebElement house=	god.findElement(By.className("nav-line-2 "));
+	
+		Actions j=new Actions(god);
+		j.moveToElement(house).perform();
+		god.findElement(By.linkText("Your Orders")).click();
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	}
+
+}

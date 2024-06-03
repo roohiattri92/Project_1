@@ -1,0 +1,29 @@
+package Array__12;
+
+public class Average_array_1 {
+
+	public static void main(String[] args) {
+int age []= new int[5];
+age[0]=34;
+age[1]=54;
+age[2]=84;
+age[3]=44;
+age[4]=39;
+
+int Sum=0;
+for(int i=0;i<age.length;i++)
+{
+	System.out.println(age[i]);
+	
+	 Sum = Sum+age[i];
+	 System.out.println(Sum);
+	int a1= age.length;
+	System.out.println(a1);
+	int a2=Sum/a1;
+	System.out.println(a2);
+	
+}
+
+	}
+
+}

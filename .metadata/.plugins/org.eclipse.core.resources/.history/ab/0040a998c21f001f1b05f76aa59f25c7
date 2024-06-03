@@ -1,0 +1,20 @@
+package TestCases;
+
+import org.testng.annotations.Test;
+
+import Source.Home_Page_aircanada;
+
+//Test the search functionality for one way.
+
+public class TestCase_4 extends Launch_Quit
+{
+	@Test
+	public void one_way() throws InterruptedException
+	{
+		Home_Page_aircanada o1=new Home_Page_aircanada(driver);
+		Thread.sleep(1000);
+		o1.One_way_select();
+		o1.From_city();
+	}
+
+}

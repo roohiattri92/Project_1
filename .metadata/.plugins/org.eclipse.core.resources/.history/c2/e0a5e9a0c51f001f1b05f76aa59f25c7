@@ -1,0 +1,62 @@
+package Source;
+
+import org.openqa.selenium.Keys;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+
+public class Home_Page_aircanada 
+{
+	@FindBy(xpath="//input[@id='bkmgFlights_tripTypeSelector_O']")
+	WebElement One_way_select;
+	
+	@FindBy(xpath="//input[@name='bkmgFlights_origin_trip_1']")
+	WebElement From_city;
+	
+	@FindBy(xpath="//input[@id='bkmgFlights_destination_trip_1']")
+	WebElement to_city;
+	
+	
+	
+	@FindBy(xpath="//span[@class='abc-form-element-suffix-icon ngx-ac-icon ngx-ac-icon-calendar']")
+	WebElement Calender;
+   
+	
+	public void One_way_select()
+	{
+		One_way_select.click();
+	}
+	
+	public void From_city()
+	{
+		From_city.sendKeys(Keys.CONTROL +"A");
+		From_city.sendKeys("Montreal");
+
+	}
+	
+	public void to_city()
+	{
+		to_city.sendKeys("india");
+		//to_city.sendKeys(Keys.TAB);
+		//to_city.sendKeys(Keys.TAB);
+	}
+	
+	public void Calender()
+	{
+		Calender.click();
+	}
+     
+	
+	
+	public Home_Page_aircanada(WebDriver driver)
+	{
+		PageFactory.initElements(driver, this);
+	}
+	
+	
+	
+	
+	
+	
+}

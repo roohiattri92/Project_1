@@ -1,0 +1,53 @@
+package selenium_program;
+
+import java.time.Duration;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.Keys;
+import org.openqa.selenium.Point;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+
+public class Amazon_Canada {
+
+	public static void main(String[] args) throws InterruptedException 
+	{
+	WebDriver driver=new ChromeDriver();
+	driver.manage().window().maximize();
+	driver.get("https://www.amazon.ca/");
+    driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
+	WebElement search_field=	driver.findElement(By.id("twotabsearchtextbox"));
+	search_field.sendKeys("shoes");
+	search_field.sendKeys(Keys.ENTER);
+	driver.findElement(By.xpath("(//span[@class='a-size-base-plus a-color-base a-text-normal'])[2]")).click();
+	driver.findElement(By.xpath("//input[@id='add-to-cart-button']")).click();
+    WebElement h=	driver.findElement(By.xpath("(//span[@class='a-price-whole'])[1]"));
+    String h1=h.getText();
+    System.out.println(h1);
+    driver.findElement(By.xpath("//input[@name='proceedToRetailCheckout']")).click();
+    driver.findElement(By.id("ap_email")).sendKeys("roohikohli92@gmail.com");
+    driver.findElement(By.id("continue")).click();
+    driver.findElement(By.id("ap_password")).sendKeys("PAPAmami@786");
+    driver.findElement(By.id("signInSubmit")).click();
+    driver.findElement(By.xpath("//input[@name='proceedToRetailCheckout']")).click();
+    driver.findElement(By.xpath("(//input[@class='a-color-link'])[1]")).click();
+  /*  WebElement hoverover=  driver.findElement(By.xpath("//span[@class='a-button-text a-declarative']"));
+    Thread.sleep(1000);
+    Point j= hoverover.getLocation();
+    Thread.sleep(1000);
+     int X=  j.getX();
+     int Y=  j.getY();
+     Thread.sleep(1000);
+     JavascriptExecutor j1=(JavascriptExecutor) driver;
+     Thread.sleep(1000);
+     j1.executeScript("window.scrollBy(1000,9000)");*/
+   
+    
+    
+  
+  }
+
+}

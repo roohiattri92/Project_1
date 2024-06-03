@@ -1,0 +1,21 @@
+package Assignment_on_selenium_1;
+
+import org.bouncycastle.util.Selector;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.Select;
+
+public class Assignment2 {
+
+	public static void main(String[] args) {
+		ChromeDriver p1=new ChromeDriver();
+		   p1.get("https://www.amazon.in/");
+		   WebElement roohi= p1.findElement(By.name("field-keywords"));
+		   roohi.click();	
+		   Select r=new Select(roohi);
+		   r.selectByIndex(11);
+		  
+		   }
+
+}

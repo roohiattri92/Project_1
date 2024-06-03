@@ -1,0 +1,10 @@
+package selenium_program;
+
+public class Slelectall_autosuggestion {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

@@ -1,0 +1,18 @@
+package java_program;
+
+public class Contain_VOWELS {
+
+	public static void main(String[] args) 
+	{
+		String Name="house is your style but my mine is best";
+		System.out.println("Does this contains Vowels"+"house is your style but my mine is best");
+		
+	String p=	Name.replaceAll("[a,i,o,u,e]", " ");
+	System.out.println(p);
+		
+		
+		
+		
+	}
+
+}

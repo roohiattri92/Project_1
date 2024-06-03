@@ -1,0 +1,31 @@
+package Source;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+
+public class Registeration_page 
+{
+	@FindBy(xpath="(//div[@class='abc-ripple-wrapper'])[2]")
+	WebElement Click_Signin;
+	
+	
+	
+	public void Click_Signin()
+	{
+		Click_Signin.click();
+	}
+	
+	
+	
+	
+	
+	public Registeration_page(WebDriver driver)
+	{
+		PageFactory.initElements(driver, this);
+	}
+	
+	
+
+}

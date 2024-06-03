@@ -1,0 +1,10 @@
+package selenium_program;
+
+public class Amazon_america {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

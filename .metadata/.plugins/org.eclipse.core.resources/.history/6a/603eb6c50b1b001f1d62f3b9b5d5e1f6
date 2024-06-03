@@ -1,0 +1,24 @@
+package selenium_program;
+
+public class This__keyword {
+	static int age;
+   static String name;
+   static  char y;
+    
+    static void add(int age,String name, char y)
+    {
+    	System.out.println("Raman");
+    	this.age=age;
+    	this.name=name;
+    	this.y='y';
+    	
+    }
+
+	public static void main(String[] args) 
+	{
+		add(10,"raman",'r');
+		System.out.println(age);
+
+	}
+
+}

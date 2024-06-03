@@ -1,0 +1,22 @@
+package Assignment_on_selenium_1;
+
+import java.sql.Driver;
+
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class Assignment1 {
+
+	public static void main(String[] args) {
+      ChromeDriver driver=new ChromeDriver();
+	  Driver.get("https://www.google.com/");
+	
+	
+	
+	
+	
+	
+	
+	
+	}
+
+}

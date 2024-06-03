@@ -1,0 +1,30 @@
+package selenium_program;
+
+import java.time.Duration;
+import java.util.List;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class autosugestion_program {
+
+	public static void main(String[] args) 
+	{
+		WebDriver god=new ChromeDriver();
+		god.navigate().to("https://www.amazon.in/");
+		god.manage().window().maximize();
+		god.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+		god.findElement(By.id("twotabsearchtextbox")).sendKeys("Shoes");
+	//	god.findElement(By.xpath("(//div[@class='s-suggestion-container']/div)[4]")).click();
+		List<WebElement> h=	god.findElements(By.xpath("//div[@class='s-suggestion-container']/div"));//if we use findelements then we cannot click easily need to write it dwown with size
+		//h.size();
+		//System.out.println(h.size());
+		h.get(h.size()-5).click();
+		
+
+
+	}
+
+}

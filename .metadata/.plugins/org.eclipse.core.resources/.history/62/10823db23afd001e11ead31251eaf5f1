@@ -1,0 +1,60 @@
+//cannot write static inside the class
+//non static method cannot implement in class can implement in main method
+//cannot write constructor
+package Interface;
+interface  Jalandhar
+{
+	abstract void add();
+	static void mul()//not called because static cannot impliment here
+	{
+		System.out.println("ram");
+	}
+	default void  yes()
+	{
+		System.out.println("papa");
+	}
+	 void house();
+	 
+interface gurdaspur extends Jalandhar
+{
+abstract void sub();
+abstract void div();
+
+
+public class Interface_1 implements gurdaspur, Jalandhar
+{
+
+	public static void main(String[] args) {
+Interface_1 k=new Interface_1();
+
+k.add();
+k.yes();
+k.house();
+
+
+	}
+
+	@Override
+	public void add() {
+System.out.println("class");		
+	}
+
+	@Override
+	public void house() {
+System.out.println("grade");		
+	}
+
+@Override
+	public void div() {
+	System.out.println("school");
+}
+
+@Override
+public void sub() {
+System.out.println("daddy");	
+}
+		
+	}
+
+}
+}

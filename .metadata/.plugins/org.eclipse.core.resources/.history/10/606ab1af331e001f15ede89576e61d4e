@@ -1,0 +1,17 @@
+package Test_Cases_POM;
+
+import org.testng.annotations.Test;
+
+//Test updating item quantities and removing items from the cart
+public class TestCase_10 {
+
+	public static void main(String[] args) 
+	{
+          @Test
+          public void Delete_item_cart()
+          {
+        	  
+          }
+	}
+
+}

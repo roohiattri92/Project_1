@@ -1,0 +1,128 @@
+package Source_POM;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+
+public class Product_page 
+{
+   @FindBy(xpath="(//i[@class=\"a-icon a-icon-star a-star-4 cm-cr-review-stars-spacing-big\"])[1]")
+    WebElement Review_rating_hoverover;
+   
+   @FindBy(xpath="//input[@id='add-to-wishlist-button-submit']")
+   WebElement Wishlisit;
+    
+   @FindBy(xpath="//a[@id='acrPopoverLink']")
+   WebElement Check_Review;
+   @FindBy(id="acrCustomerReviewText")
+   WebElement Rating_check;
+   @FindBy(xpath="(//span[@class='a-button-text'])[1]")
+   WebElement Continue_Shoping;
+   @FindBy(xpath="//span[@id=\"nav-cart-count\"]")
+   WebElement Cart_bucket;
+   @FindBy(xpath="(//input[@class='a-button-input'])[1]")
+   WebElement Delete_item;
+   
+   @FindBy(xpath="//input[@id='add-to-cart-button']")
+   WebElement add_to_cart;
+   
+    @FindBy(xpath="//input[@id='add-to-wishlist-button-submit']")
+    WebElement  add_to_wishlist;
+    
+    @FindBy(xpath="//input[@id='add-to-cart-button']")
+	WebElement Add_to_cart;
+	@FindBy(xpath="//input[@name='proceedToRetailCheckout']")
+	WebElement proceed_to_buy;
+	@FindBy(css="#nav-cart-count-container")
+	WebElement click_on_cart;
+	@FindBy(xpath="(//input[@class='a-color-link'])[1]")
+	WebElement delete_the_product;
+   
+	@FindBy(xpath="//div[@class='sc-without-multicart']")
+	WebElement No_of_item_display;
+   
+   
+  public void review_rating(WebDriver driver)
+   {
+	   Actions k1=new Actions(driver);
+	   k1.moveToElement(Check_Review).perform();
+   }
+
+   public void wishlisit()
+   {
+	   Wishlisit.click();
+   }
+   
+   public void Check_Review()
+   {
+	   Check_Review.click();
+   }
+   
+   public void Rating_check()
+   {
+	  String o= Rating_check.getText();
+	  System.out.println(o);
+	   
+   }
+   
+   
+   public void Continue_Shoping()
+   {
+	   Continue_Shoping.click();
+	   
+   }
+   
+   public void Cart_bucket()
+   {
+	   Cart_bucket.click();
+	   
+   }
+   public void Delete_item()
+   {
+	   Delete_item.click();
+	   
+   }
+   public void click_on_cart()
+   {
+	   click_on_cart.click();
+	
+	}
+   public void add_to_wishlist()
+   {
+	   add_to_wishlist.click();
+	   
+   }
+	
+	
+	public void Add_to_cart()
+	{
+		Add_to_cart.click();
+	}
+	public void proceed_to_buy()
+	{
+		proceed_to_buy.click();
+	}
+	
+	public void delete_the_product()
+	{
+		delete_the_product.click();
+	}
+	
+	
+	public void No_of_item_display(WebDriver driver)
+	{
+		String p=No_of_item_display.getText();
+		System.out.println(p);
+	String  oo=p.substring(15, 22);
+	System.out.println(oo);
+	
+	}
+
+public Product_page(WebDriver driver)
+  {
+	  PageFactory.initElements(driver, this);
+  }
+
+}

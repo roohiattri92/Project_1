@@ -1,0 +1,12 @@
+package Assignment_on_selenium_1;
+
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class hoverover_assignment2 {
+
+	public static void main(String[] args) {
+		ChromeDriver p1=new ChromeDriver();
+		   p1.get("https://www.myntra.com/");
+	}
+
+}

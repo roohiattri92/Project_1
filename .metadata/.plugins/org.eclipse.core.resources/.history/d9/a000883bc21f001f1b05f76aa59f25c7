@@ -1,0 +1,29 @@
+package Source;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+
+public class Home_Page_aircanada 
+{
+	@FindBy(xpath="//input[@id='bkmgFlights_tripTypeSelector_O']")
+	WebElement One_way_select;
+   
+	
+	public void One_way_select()
+	{
+		One_way_select.click();
+	}
+	
+	public Home_Page_aircanada(WebDriver driver)
+	{
+		PageFactory.initElements(driver, this);
+	}
+	
+	
+	
+	
+	
+	
+}

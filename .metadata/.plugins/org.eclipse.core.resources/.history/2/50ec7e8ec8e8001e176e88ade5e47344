@@ -1,0 +1,30 @@
+package Array__12;
+
+import java.util.Arrays;
+
+public class Reverseorder_Array_1 {
+
+	public static void main(String[] args) {
+		int age[]=new int[5];
+		age[0]=12;
+		age[1]=22;
+		age[2]=92;
+		age[3]=19;
+		age[4]=18;
+		int roll_no[]=new int[5];
+		int k=age.length-1;
+		System.out.println(k);
+
+		for(int i=0;i<age.length-1;i++)
+		{
+			roll_no[k]=age[i];
+			
+			k--;
+			
+			System.out.println(Arrays.toString(age));
+			System.out.println(Arrays.toString(roll_no));
+		}
+
+	}
+
+}

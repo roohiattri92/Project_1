@@ -1,0 +1,9 @@
+package selenium_program;
+
+public class Amazon_CANADA 
+{
+	WebDriver driver=new ChromeDriver();
+	driver.manage
+	
+
+}

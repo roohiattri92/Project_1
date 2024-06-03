@@ -1,0 +1,17 @@
+package Array__12;
+import java.util.Arrays;
+public class ConsistsofAlphabet_1 {
+public static void main(String[] args) {
+String name="My Name Is Ramanpreet Kaur";
+char[] a1= name.toCharArray();
+System.out.println(Arrays.toString(a1));
+System.out.println(name.length());
+for(int i=0;i<name.length();i++) {
+	
+
+
+boolean q=Character.isAlphabetic(a1[i]);
+System.out.println(q);
+	}
+
+}

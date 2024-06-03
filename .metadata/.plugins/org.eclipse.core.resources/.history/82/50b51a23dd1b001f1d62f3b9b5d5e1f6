@@ -1,0 +1,13 @@
+package Test_Cases_POM;
+
+import org.testng.annotations.Test;
+
+// ensure that the product detail page displays all necessary information(price,review,description)
+public class TestCase_7 extends Launch_Quit
+{
+  @Test
+  public void Display_information()
+  {
+	  
+  }
+}

@@ -1,0 +1,24 @@
+package selenium_program;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class Signupfacebook {
+
+	public static void main(String[] args) {
+		ChromeDriver house=new ChromeDriver();
+		house.get("https://www.facebook.com/signup");
+		house.findElement(By.name("firstname")).sendKeys("roohi");
+		house.findElement(By.name("firstname")).sendKeys(Keys.CONTROL +"c");
+		house.findElement(By.name("firstname")).sendKeys(Keys.TAB);
+		//house.findElement(By.name("lastname")).sendKeys(Keys.CONTROL+"v");
+		house.findElement(By.name("lastname")).sendKeys("roohi");
+		house.findElement(By.name("reg_email__")).sendKeys("roohikohli92@gmail.com");
+		house.findElement(By.id("password_step_input")).sendKeys("Welcome");
+
+
+	}
+
+}

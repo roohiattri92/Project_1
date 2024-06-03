@@ -1,0 +1,37 @@
+package String_12;
+
+public class Palindron_String {
+
+	public static void main(String[] args) 
+	{
+               String name="MOM";
+             /* System.out.println(name);
+            int g=  name.length();
+            System.out.println(g);*/
+              
+            int i=0;
+            int j=0;
+            System.out.println(j);
+            
+            for( i=0;i<=name.length()-1;i++)
+            {
+            	System.out.println(name.charAt(i));
+            	
+            }
+            for( j=name.length();j>0;j--)
+            {
+            	System.out.println(name.charAt(j));
+            	
+            }
+            
+            if(i==j)
+            {
+            	System.out.println("it is palindrom");
+            }
+            else
+            {
+            	System.out.println("it is not palindrom");
+            }
+	}
+
+}

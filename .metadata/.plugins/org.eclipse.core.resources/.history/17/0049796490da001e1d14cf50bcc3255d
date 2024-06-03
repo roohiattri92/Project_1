@@ -1,0 +1,20 @@
+package Sub_1;
+
+import java.util.Scanner;
+
+public class Tttty1 {
+int a=43;
+int b=654;
+
+	public static void main(String[] args) {
+		Scanner s1=new Scanner(System.in);
+		int my= s1. nextInt();
+		int name=s1.nextInt();
+		String c=s1.next();
+	int my+name;
+	System.out.println("sum");
+		
+
+	}
+
+}

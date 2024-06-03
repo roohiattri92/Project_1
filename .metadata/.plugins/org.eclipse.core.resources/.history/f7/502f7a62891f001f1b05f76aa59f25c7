@@ -1,0 +1,18 @@
+package TestCases;
+
+import org.testng.annotations.Test;
+
+import Source.Registeration_page;
+
+//verify user can successfully register their account.
+public class TestCase_1 extends Launch_Quit
+
+{
+	@Test
+	public void Registeration()
+	{
+		Registeration_page r1=new Registeration_page(driver);
+		r1.Click_Signin();
+	}
+
+}

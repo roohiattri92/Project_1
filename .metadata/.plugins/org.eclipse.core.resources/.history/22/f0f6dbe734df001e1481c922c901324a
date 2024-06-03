@@ -1,0 +1,27 @@
+package super_7;
+class parent_334
+{
+	parent_334(int w){
+		System.out.println("y");
+	}
+}
+
+class child_32 extends parent_334
+{
+	child_32()
+	{super(10);
+		System.out.println("j");
+	}
+}
+
+public class Supertty_12 extends child_32
+{
+
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+System.out.println("u");
+new child_32();
+	}
+
+}

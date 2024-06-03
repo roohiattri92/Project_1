@@ -1,0 +1,19 @@
+package Assignment_on_selenium_1;
+
+import java.sql.Driver;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class Dropdown_1 {
+
+	public static void main(String[] args) {
+		ChromeDriver our=new ChromeDriver();
+	//	driver.manage().window().maximize();
+
+		 our.get("https://www.amazon.in/");
+		   WebElement papa=   our.findElement(By.id("twotabsearchtextbox")).click();
+	}
+
+}

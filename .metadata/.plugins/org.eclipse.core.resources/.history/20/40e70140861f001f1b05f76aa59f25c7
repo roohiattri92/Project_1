@@ -1,0 +1,81 @@
+package Source_Yatra;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+
+public class Registeration_page 
+{
+   @FindBy(xpath="(//a[@class='dropdown-toggle'])[1]")
+   WebElement My_account_Hoverover;
+   
+   @FindBy(xpath="//a[@class='fl log-in pgLogIn pgSignUp']")
+   WebElement Sign_up_button;
+   
+   @FindBy(xpath="//input[@name='login-input']")
+   WebElement email_textfield;
+   
+   @FindBy(xpath="//button[@class='main-btn mt25']")
+   WebElement continue_button;
+   
+   @FindBy(xpath="//img[@id='google-login-btn']")
+   WebElement signin_with_google;
+   
+   @FindBy (xpath="//a[@id='signInBtn']")
+   WebElement Login_Button;
+   
+  
+   
+   
+   public void My_account(WebDriver driver)
+   {
+	   Actions n=new Actions(driver);
+	   n.moveToElement(My_account_Hoverover).perform();
+ }
+   
+   public void Sign_up_button()
+   {
+	   Sign_up_button.click();
+	   
+   }
+   public void email_textfield()
+   {
+	   email_textfield.sendKeys("roohikohli92@gmail.com");
+	   
+   }
+   
+   public void wrongemail_textfield()
+   {
+	   email_textfield.sendKeys("roohikohli91@gmail.com");
+	   
+   }
+   public void continue_button()
+   {
+	   continue_button.click();
+	   
+   }
+   
+   public void signin_with_google()
+   {
+	   signin_with_google.click();
+	   
+   }
+   public void Login_Button()
+   {
+	   Login_Button.click();
+	   
+   }
+   
+   
+   
+   
+   public Registeration_page(WebDriver driver)
+   {
+	   PageFactory.initElements(driver, this);
+	   
+   }
+   
+   
+}

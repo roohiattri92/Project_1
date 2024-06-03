@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="MavenProjectWizardLocationPage">
+		<list key="location">
+			<item value="C:\Users\roohi\eclipse-workspace\Project_POM_YATRA_1"/>
+			<item value="C:\Users\roohi\eclipse-workspace\Automation_1"/>
+			<item value="C:\Users\roohi\eclipse-workspace\selenium_program\src\Assignment_on_selenium_1\Assignment164.java"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+	<section name="MavenProjectWizardArchetypePage">
+		<item key="catalog" value="All Catalogs"/>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+	<section name="Maven2ProjectWizardArchifactPage">
+		<list key="package">
+			<item value="AIR_CANADA_1.AIR_CANADA_1"/>
+			<item value="Project_POM_YATRA.Project_POM_YATRA_1"/>
+			<item value="Project_POM_YATRA.Project_POM_yatra"/>
+			<item value="Project_POM_AMAZON.PROJECT_POM_AMAZON"/>
+			<item value="maven_package_1.Maven_Project_1"/>
+		</list>
+		<list key="groupId">
+			<item value="AIR_CANADA_1"/>
+			<item value="Project_POM_YATRA"/>
+			<item value="Project_POM_AMAZON"/>
+			<item value="maven_package_1"/>
+		</list>
+		<list key="artifactId">
+			<item value="AIR_CANADA_1"/>
+			<item value="Project_POM_YATRA_1"/>
+			<item value="Project_POM_yatra"/>
+			<item value="PROJECT_POM_AMAZON"/>
+			<item value="Maven_Project_1"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+		<list key="version">
+			<item value="0.0.1-SNAPSHOT"/>
+		</list>
+	</section>
+	<section name="MavenProjectWizardArtifactPage">
+		<list key="groupId">
+		</list>
+		<list key="name">
+		</list>
+		<list key="artifactId">
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+		<list key="version">
+			<item value="0.0.1-SNAPSHOT"/>
+		</list>
+	</section>
+	<section name="org.eclipse.m2e.core.pom.overview">
+	</section>
+	<section name="org.eclipse.m2e.core.pom.dependencies">
+	</section>
+</section>

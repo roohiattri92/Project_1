@@ -1,0 +1,16 @@
+package Array__12;
+
+public class Reverseorder_Array_1 {
+
+	public static void main(String[] args) {
+		int age[]=new int[4];
+		age[0]=12;
+		age[1]=22;
+		age[2]=92;
+		age[3]=12;
+		age[0]=12;
+
+
+	}
+
+}

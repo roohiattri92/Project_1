@@ -1,0 +1,22 @@
+package selenium_program;
+
+import java.time.Duration;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class Allseleniumconcept_in_1_prg {
+
+	public static void main(String[] args) 
+	{
+		WebDriver god=new ChromeDriver();
+		god.navigate().to("https://www.amazon.in/");
+		god.manage().window().maximize();
+		god.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+		god.findElement(By.id("twotabsearchtextbox")).click();
+		god.findElement(By.name("url")).click();
+
+	}
+
+}

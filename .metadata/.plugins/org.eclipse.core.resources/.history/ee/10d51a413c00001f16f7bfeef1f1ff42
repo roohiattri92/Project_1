@@ -1,0 +1,13 @@
+package selenium_program;
+
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class htmlisdisplay_isenable {
+
+	public static void main(String[] args) {
+    ChromeDriver p=new ChromeDriver();
+    p.get("file:///C:/Users/roohi/Downloads/learningHTML1.html");
+    
+	}
+
+}

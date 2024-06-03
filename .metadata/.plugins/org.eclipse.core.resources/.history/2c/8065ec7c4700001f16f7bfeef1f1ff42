@@ -1,0 +1,19 @@
+package selenium_program;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class Slelectall_autosuggestion {
+
+	public static void main(String[] args) {
+   ChromeDriver house=new ChromeDriver();
+   house.get("https://www.google.com");
+  WebElement hh= house.findElement(By.xpath("https://www.google.com/"));
+   
+   hh.click();
+
+
+	}
+
+}

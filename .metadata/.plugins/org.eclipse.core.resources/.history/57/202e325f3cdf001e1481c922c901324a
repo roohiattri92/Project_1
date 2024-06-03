@@ -1,0 +1,23 @@
+package super_7;
+
+
+
+public class This_calling1 {
+	int a;
+	int b;
+	char c;
+	String w;
+void add(int a,int b, String s, char m)
+	{
+		System.out.println("addition");
+	}
+static  void sub(int a)
+{
+	System.out.println("a");
+}
+
+	public static void main(String[] args) {
+	
+System.out.println("b");
+	}
+}

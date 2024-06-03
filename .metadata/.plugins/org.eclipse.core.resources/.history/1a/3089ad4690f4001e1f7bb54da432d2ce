@@ -1,0 +1,32 @@
+package Collection_12;
+
+import java.util.ArrayList;
+import java.util.Collection;
+
+public class ArrayList_1 {
+
+	public static void main(String[] args, Collection a1) {
+ArrayList b1=new ArrayList();
+b1.add("ram");
+b1.add("Roohi");
+b1.add(145565);
+b1.add(null);
+b1.addAll(a1);
+System.out.println(b1);
+
+ArrayList a1=new ArrayList();
+a1.add("moon");
+a1.add("school");
+a1.add(14565689);
+a1.add(null);
+a1.addAll(b1);
+
+
+
+
+
+
+System.out.println(a1);
+	}
+
+}

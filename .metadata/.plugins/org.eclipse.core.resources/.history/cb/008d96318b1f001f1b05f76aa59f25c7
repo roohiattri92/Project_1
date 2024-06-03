@@ -1,0 +1,20 @@
+package TestCases;
+
+import org.testng.annotations.Test;
+
+import Source.Registeration_page;
+
+//verify user can successfully register their account.
+public class TestCase_1 extends Launch_Quit
+
+{
+	@Test
+	public void Registeration() throws InterruptedException
+	{
+		Registeration_page r1=new Registeration_page(driver);
+		Thread.sleep(2000);
+		r1.Click_Signin();
+		r1.Signin_button();
+	}
+
+}

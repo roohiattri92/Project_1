@@ -1,0 +1,57 @@
+package Source_POM;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+
+public class Home_page 
+{
+	@FindBy(xpath="//span[@class='nav-line-2 ']")
+	WebElement Hover_over;
+	
+	@FindBy(xpath="//span[.='Manage Profiles']")
+	WebElement Manage_profile;
+	
+	@FindBy(xpath="//a[.='View']")
+	WebElement view_button;
+	
+	@FindBy(id="twotabsearchtextbox")
+	WebElement Search_text_field;
+	
+	
+	public void hoverover(WebDriver driver)
+	{
+		Actions h1=new Actions(driver);
+		h1.moveToElement(Hover_over).perform();
+	}
+	
+	public void manageprofile()
+	{
+		Manage_profile.click();
+	}
+	
+	public void view_button()
+	{
+		view_button.click();
+	}
+	
+	public void search_text_field()
+	{
+		Search_text_field.sendKeys("Shoes");;
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	public Home_page(WebDriver driver)
+	{
+		PageFactory.initElements(driver, this);
+	}
+
+}

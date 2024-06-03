@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-06-01T14:08:45 EDT" name="Default suite" finished-at="2024-06-01T14:09:39 EDT" duration-ms="53618">
+    <groups>
+    </groups>
+    <test started-at="2024-06-01T14:08:45 EDT" name="Default test" finished-at="2024-06-01T14:09:39 EDT" duration-ms="53618">
+      <class name="TestCases.TestCase_8">
+        <test-method is-config="true" signature="Launch()[pri:0, instance:TestCases.TestCase_8@48f278eb]" started-at="2024-06-01T14:08:45 EDT" name="Launch" finished-at="2024-06-01T14:09:02 EDT" duration-ms="16403" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Launch -->
+        <test-method signature="Additional_options()[pri:0, instance:TestCases.TestCase_8@48f278eb]" started-at="2024-06-01T14:09:02 EDT" name="Additional_options" finished-at="2024-06-01T14:09:39 EDT" duration-ms="37127" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Additional_options -->
+        <test-method is-config="true" signature="Quit()[pri:0, instance:TestCases.TestCase_8@48f278eb]" started-at="2024-06-01T14:09:39 EDT" name="Quit" finished-at="2024-06-01T14:09:39 EDT" duration-ms="4" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Quit -->
+      </class> <!-- TestCases.TestCase_8 -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

@@ -1,0 +1,45 @@
+package Interface;
+interface  Jalandhar
+{
+	abstract void add();
+	private static void mul()
+	{
+		System.out.println("ram");
+	}
+  static void  yes()
+	{
+		System.out.println("papa");
+	}
+	void house();
+	
+	
+	
+}
+
+
+public class Interface_1 implements Jalandhar
+{
+
+	public static void main(String[] args) {
+Interface_1 k=new Interface_1();
+k.add();
+k.yes();
+k.house();
+mul();
+
+	}
+
+	
+	
+
+	@Override
+	public void add() {
+System.out.println("class");		
+	}
+
+	@Override
+	public void house() {
+System.out.println("grade");		
+	}
+
+}
