@@ -1,0 +1,21 @@
+package String_12;
+
+public class String_functions {
+
+	public static void main(String[] args) 
+	{
+		String name="Ramanpreet kaur";
+		
+		for(int i=name.length();i>0;i--)
+		{
+		char t=name.charAt(i);
+		System.out.println(t);
+		}
+		
+		
+		
+		
+
+	}
+
+}

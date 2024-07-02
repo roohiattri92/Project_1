@@ -1,0 +1,18 @@
+package String_12;
+
+public class Paladrom_2 
+{
+
+	public static void main(String[] args) 
+	{
+		String name="Radar";
+		
+		StringBuffer j= new StringBuffer(name);
+		StringBuffer m=j.reverse();
+		System.out.println(m);
+
+	}
+
+}
+
+

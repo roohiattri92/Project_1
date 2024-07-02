@@ -1,0 +1,25 @@
+package Programs;
+
+import java.util.Arrays;
+
+public class Anagram {
+
+	public static void main(String[] args) 
+	{
+	     String name="Race";
+		String name1="Care";
+		
+	 String e=	name.toLowerCase();
+	 String g= name1.toLowerCase();
+	 
+	char[] g1= name.toCharArray();
+	char[] g2=name1.toCharArray();
+	System.out.println(g1);
+	 
+	 
+	 
+	
+
+	}
+
+}

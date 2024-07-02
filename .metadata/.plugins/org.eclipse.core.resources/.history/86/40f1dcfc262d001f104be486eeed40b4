@@ -1,0 +1,34 @@
+package String_12;
+
+public class String_all_functions_1 {
+
+	public static void main(String[] args) 
+	{
+		
+		String name = "Ramanpreet kaur747948`4&&#%#^(#)!_($ljfhfhw";
+		int alpha=0;
+		int Count=0;
+		
+		for(int i=0;i<name.length();i++)
+		{
+			char k=name.charAt(i);
+			
+			if(Character.isDigit(k)==true)
+			{
+			//	alpha++;
+				alpha=alpha+k;
+			}
+			if(Character.isAlphabetic(k)==true)
+			{
+				//Count++;
+				Count=Count+k;
+			}
+			
+		}
+		System.out.println(alpha);
+		System.out.println(Count);
+		
+
+	}
+
+}

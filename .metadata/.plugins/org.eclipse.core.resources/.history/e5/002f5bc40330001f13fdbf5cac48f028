@@ -1,0 +1,21 @@
+package Pateran_FOR_LOOP;
+
+public class Patern3 {
+
+	public static void main(String[] args) 
+	{
+		int i, j;
+		int n=6;
+		for(i=1;i<=5;i++)
+		{
+			for(j=1;j<=i+1;j++)
+			{
+				System.out.println("*");
+			}
+			System.out.println("");
+			
+		}
+
+	}
+
+}

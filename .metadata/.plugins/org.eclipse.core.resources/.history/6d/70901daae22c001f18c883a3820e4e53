@@ -1,0 +1,51 @@
+package String_12;
+
+import java.util.Arrays;
+
+public class Anagram_1 {
+
+	public static void main(String[] args) 
+	{   
+		String A="Roohi";
+		String B="Asaf";
+		
+		String first_leter=A.toLowerCase();
+		String second_leter=B.toLowerCase();
+		
+		if(first_leter.length()==second_leter.length())
+		{
+		char[]	h=first_leter.toCharArray();
+		char[]	l=	first_leter.toCharArray();
+		
+		 Arrays.sort(h);
+		 Arrays.sort(l);
+		 
+		 boolean J1=Arrays.equals(h, l);
+		 if(J1)
+		 {
+			 System.out.println("it is anagram");
+		 }
+		 else
+		 {
+			 System.out.println("it is not anagram");
+		 }
+		
+		
+		}
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+    }
+
+}

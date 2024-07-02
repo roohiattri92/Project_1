@@ -1,0 +1,17 @@
+package String_12;
+
+public class Countisdigit_alpha_special 
+{
+	
+
+      public static void main(String[] args) 
+{
+	String name = "Ramanpreet kaur747948`4&&#%#^(#)!_($ljfhfhw";
+	
+      char[] u= 	name.toCharArray();
+      System.out.println(u);
+	
+	
+
+}
+}
